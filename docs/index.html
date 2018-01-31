@@ -13284,7 +13284,8 @@ conda install -c https://conda.anaconda.org/pansapiens bigdatascript
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="The-Bioconda-way">The Bioconda way<a class="anchor-link" href="#The-Bioconda-way">&#182;</a></h1><p><a href="http://bioconda.github.io/contributing.html">http://bioconda.github.io/contributing.html</a></p>
-<p>Adding a recipe and testing locally before making a Pull Request</p>
+<p>Adding a recipe and testing locally before making a Pull Request.</p>
+<p>First step - go to <a href="https://github.com/bioconda/bioconda-recipes">https://github.com/bioconda/bioconda-recipes</a> and fork the repo.</p>
 
 </div>
 </div>
@@ -13294,7 +13295,9 @@ conda install -c https://conda.anaconda.org/pansapiens bigdatascript
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>git clone https://github.com/bioconda/bioconda-recipes.git
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># Then clone your fork</span>
+<span class="nb">export</span> <span class="nv">MY_GIT_USERNAME</span><span class="o">=</span>pansapiens
+git clone https://github.com/<span class="si">${</span><span class="nv">MY_GIT_USERNAME</span><span class="si">}</span>/bioconda-recipes.git
 <span class="nb">cd</span> bioconda-recipes
 </pre></div>
 
@@ -13308,10 +13311,11 @@ conda install -c https://conda.anaconda.org/pansapiens bigdatascript
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="c1"># Create a new recipe</span>
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># Create a new branch for your recipe</span>
 git branch mynewtool
 git checkout mynewtool
 
+<span class="c1"># Existing recipes in Bioconda usually make good starting points</span>
 vi recipes/mynewtool/meta.yaml
 vi recipes/mynewtool/build.sh
 
@@ -13334,14 +13338,16 @@ git commit -a -m <span class="s2">&quot;Added new recipe for mynewtool.&quot;</s
 <span class="c1"># Build your recipe and run tests</span>
 ./simulate-travis.py --disable-docker --packages bigdatascript --force
 
-<span class="c1"># If tests passed, you can now squash your commits, push the branch and make a PR</span>
+<span class="c1"># If tests passed, you can now squash your commits, push the branch</span>
 git push origin
+
+<span class="c1"># Go to https://github.com/bioconda/bioconda-recipes and make a Pull Request for your branch</span>
 
 <span class="c1"># TravisCI will automatically build your branch.</span>
 <span class="c1"># If TravisCI tests pass, the Bioconda team will review your PR and if it&#39;s okay, merge it</span>
 
 <span class="c1"># Recipes in the Bioconda master branch are automatically built on Linux and macOS</span>
-<span class="c1"># (via TravisCI) and uploaded to the Anaconda `bioconda` channel</span>
+<span class="c1"># (via TravisCI) and uploaded to the Anaconda `bioconda` channel.</span>
 </pre></div>
 
 </div>
