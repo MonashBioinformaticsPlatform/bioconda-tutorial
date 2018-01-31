@@ -1,8 +1,18 @@
-# Requires:
+# A short tutorial about using Conda and Bioconda for bioinformatics tools
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/MonashBioinformaticsPlatform/bioconda-tutorial/master?filepath=Bioconda_Installation.ipynb)
+
+* [Jupyter Notebook](https://github.com/MonashBioinformaticsPlatform/bioconda-tutorial/blob/master/Bioconda_Installation.ipynb)
+* [Slides](https://monashbioinformaticsplatform.github.io/bioconda-tutorial/#/)
+
+# Requirements:
 
 * Jupyter Notebook (or JupyterLab)
 * Jupyter Bash Kernel: https://github.com/takluyver/bash_kernel
 
+If you've cloned the repository, to view the slides locally.
 ```bash
 run_slides.h
 ```
