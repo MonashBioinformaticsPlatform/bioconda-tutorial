@@ -12524,14 +12524,11 @@ lrwxr-xr-x   1 perry  staff     6B 31 Jan 12:09 <span class="ansi-magenta-fg">xz
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Create a new conda environment</span>
 conda create -y --name new_env
-
-<span class="c1"># Activate it explicitly (actually not required after `conda create`)</span>
-<span class="nb">source</span> activate new_env
 </pre></div>
 
 </div>
@@ -12560,7 +12557,38 @@ Package plan for installation in environment /Users/perry/miniconda3/envs/new_en
 # &gt; source deactivate
 #
 
-(new_env) </pre>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># Activate it explicitly (actually not required after `conda create`)</span>
+<span class="nb">source</span> activate new_env
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(new_env) </pre>
 </div>
 </div>
 
@@ -12580,7 +12608,7 @@ Package plan for installation in environment /Users/perry/miniconda3/envs/new_en
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># Install some packages</span>
@@ -12612,7 +12640,6 @@ The following NEW packages will be INSTALLED:
     samtools: 0.1.14-0 bioconda   
     zlib:     1.2.8-3  conda-forge
 
-samtools-0.1.1 100% |################################| Time: 0:00:02 189.56 kB/s
 (new_env) </pre>
 </div>
 </div>
@@ -12633,7 +12660,7 @@ samtools-0.1.1 100% |################################| Time: 0:00:02 189.56 kB/s
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># By default, environments live under ~/miniconda3/envs</span>
@@ -12657,19 +12684,19 @@ which samtools
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>(new_env) (new_env) total 1336
-drwxr-xr-x  18 perry  staff   576B 31 Jan 13:18 <span class="ansi-blue-fg">.</span>
-drwxr-xr-x   7 perry  staff   224B 31 Jan 13:18 <span class="ansi-blue-fg">..</span>
-lrwxr-xr-x   1 perry  staff    36B 31 Jan 13:18 <span class="ansi-magenta-fg">activate</span> -&gt; /Users/perry/miniconda3/bin/activate
-lrwxr-xr-x   1 perry  staff     3B 31 Jan 13:18 <span class="ansi-magenta-fg">captoinfo</span> -&gt; tic
+drwxr-xr-x  18 perry  staff   576B  1 Feb 15:30 <span class="ansi-blue-fg">.</span>
+drwxr-xr-x   7 perry  staff   224B  1 Feb 15:30 <span class="ansi-blue-fg">..</span>
+lrwxr-xr-x   1 perry  staff    36B  1 Feb 15:30 <span class="ansi-magenta-fg">activate</span> -&gt; /Users/perry/miniconda3/bin/activate
+lrwxr-xr-x   1 perry  staff     3B  1 Feb 15:30 <span class="ansi-magenta-fg">captoinfo</span> -&gt; tic
 -rwxrwxr-x   3 perry  staff    13K  3 Dec  2016 <span class="ansi-red-fg">clear</span>
-lrwxr-xr-x   1 perry  staff    33B 31 Jan 13:18 <span class="ansi-magenta-fg">conda</span> -&gt; /Users/perry/miniconda3/bin/conda
-lrwxr-xr-x   1 perry  staff    38B 31 Jan 13:18 <span class="ansi-magenta-fg">deactivate</span> -&gt; /Users/perry/miniconda3/bin/deactivate
+lrwxr-xr-x   1 perry  staff    33B  1 Feb 15:30 <span class="ansi-magenta-fg">conda</span> -&gt; /Users/perry/miniconda3/bin/conda
+lrwxr-xr-x   1 perry  staff    38B  1 Feb 15:30 <span class="ansi-magenta-fg">deactivate</span> -&gt; /Users/perry/miniconda3/bin/deactivate
 -rwxrwxr-x   3 perry  staff    71K  3 Dec  2016 <span class="ansi-red-fg">infocmp</span>
-lrwxr-xr-x   1 perry  staff     3B 31 Jan 13:18 <span class="ansi-magenta-fg">infotocap</span> -&gt; tic
--rwxrwxr-x   1 perry  staff   5.2K 31 Jan 13:18 <span class="ansi-red-fg">ncurses5-config</span>
--rwxrwxr-x   1 perry  staff   5.2K 31 Jan 13:18 <span class="ansi-red-fg">ncursesw5-config</span>
-lrwxr-xr-x   1 perry  staff     4B 31 Jan 13:18 <span class="ansi-magenta-fg">reset</span> -&gt; tset
--rwxrwxr-x   2 perry  staff   381K  7 Oct 04:39 <span class="ansi-red-fg">samtools</span>
+lrwxr-xr-x   1 perry  staff     3B  1 Feb 15:30 <span class="ansi-magenta-fg">infotocap</span> -&gt; tic
+-rwxrwxr-x   1 perry  staff   5.2K  1 Feb 15:30 <span class="ansi-red-fg">ncurses5-config</span>
+-rwxrwxr-x   1 perry  staff   5.2K  1 Feb 15:30 <span class="ansi-red-fg">ncursesw5-config</span>
+lrwxr-xr-x   1 perry  staff     4B  1 Feb 15:30 <span class="ansi-magenta-fg">reset</span> -&gt; tset
+-rwxrwxr-x   3 perry  staff   381K  7 Oct 04:39 <span class="ansi-red-fg">samtools</span>
 -rwxrwxr-x   3 perry  staff    18K  3 Dec  2016 <span class="ansi-red-fg">tabs</span>
 -rwxrwxr-x   3 perry  staff    80K  3 Dec  2016 <span class="ansi-red-fg">tic</span>
 -rwxrwxr-x   3 perry  staff    19K  3 Dec  2016 <span class="ansi-red-fg">toe</span>
@@ -12696,7 +12723,7 @@ lrwxr-xr-x   1 perry  staff     4B 31 Jan 13:18 <span class="ansi-magenta-fg">re
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># You can export the current environment to an environment.yml</span>
@@ -12752,7 +12779,74 @@ prefix: /Users/perry/miniconda3/envs/new_env
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># An alternative, if you&#39;ve like to lock exact package versions with channel + version + build + md5 checksums</span>
+<span class="c1"># Note that this is now platform specific, but gives better guarantees of a reproducible environment</span>
+conda list --show-channel-urls --md5 --explicit &gt;package-list.txt
+
+cat package-list.txt
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(new_env) (new_env) (new_env) (new_env) # This file may be used to create an environment using:
+# $ conda create --name &lt;env&gt; --file &lt;this file&gt;
+# platform: osx-64
+@EXPLICIT
+https://conda.anaconda.org/conda-forge/osx-64/ncurses-5.9-10.tar.bz2#f303ad9e588c5f06b9b02077b57d88d5
+https://conda.anaconda.org/bioconda/osx-64/samtools-0.1.14-0.tar.bz2#d2d79f5cab9c1c420887875623d26ea9
+https://conda.anaconda.org/conda-forge/osx-64/zlib-1.2.8-3.tar.bz2#03b6fcc7a5e1a471e74049665e1c06b0
+(new_env) </pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre></pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># You can use these files to create new environments with those packages like:</span>
+
+<span class="c1"># conda create --name reproduced_env --file environment.yml</span>
+<span class="c1"># conda create --name locked_reproduced_env --file package-list.txt</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># You can recreate the environment somewhere else with</span>
@@ -13290,33 +13384,29 @@ conda install -c https://conda.anaconda.org/pansapiens bigdatascript
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="c1"># Then clone your fork</span>
-<span class="nb">export</span> <span class="nv">MY_GIT_USERNAME</span><span class="o">=</span>pansapiens
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Then clone your fork</p>
+<div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">MY_GIT_USERNAME</span><span class="o">=</span>pansapiens
 git clone https://github.com/<span class="si">${</span><span class="nv">MY_GIT_USERNAME</span><span class="si">}</span>/bioconda-recipes.git
 <span class="nb">cd</span> bioconda-recipes
 </pre></div>
 
 </div>
 </div>
-</div>
-
 </div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="c1"># Create a new branch for your recipe</span>
-git branch mynewtool
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Create a new branch for your recipe.</p>
+<div class="highlight"><pre><span></span>git branch mynewtool
 git checkout mynewtool
-
-<span class="c1"># Existing recipes in Bioconda usually make good starting points</span>
-vi recipes/mynewtool/meta.yaml
+</pre></div>
+<p>Edit your recipe. Using a similar existing recipe as a template to modify it is often a good stratgy. (You can also use <code>conda skeleton</code>).</p>
+<div class="highlight"><pre><span></span>vi recipes/mynewtool/meta.yaml
 vi recipes/mynewtool/build.sh
 
 git commit -a -m <span class="s2">&quot;Added new recipe for mynewtool.&quot;</span>
@@ -13324,36 +13414,39 @@ git commit -a -m <span class="s2">&quot;Added new recipe for mynewtool.&quot;</s
 
 </div>
 </div>
-</div>
-
 </div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="c1"># This Bioconda script creates a fresh Miniconda install, similar to the Bioconda Travis CI</span>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Simulate the TravisCI environment to do a test build</p>
+<div class="highlight"><pre><span></span><span class="c1"># This Bioconda script creates a fresh Miniconda install, similar to the Bioconda Travis CI</span>
 ./simulate-travis.py --bootstrap /tmp/anaconda --overwrite
 
-<span class="c1"># Build your recipe and run tests</span>
-./simulate-travis.py --disable-docker --packages bigdatascript --force
-
-<span class="c1"># If tests passed, you can now squash your commits, push the branch</span>
-git push origin
-
-<span class="c1"># Go to https://github.com/bioconda/bioconda-recipes and make a Pull Request for your branch</span>
-
-<span class="c1"># TravisCI will automatically build your branch.</span>
-<span class="c1"># If TravisCI tests pass, the Bioconda team will review your PR and if it&#39;s okay, merge it</span>
-
-<span class="c1"># Recipes in the Bioconda master branch are automatically built on Linux and macOS</span>
-<span class="c1"># (via TravisCI) and uploaded to the Anaconda `bioconda` channel.</span>
+<span class="c1"># Build your recipe and run tests.</span>
+<span class="c1"># --packages is optional, only recipes where version and build have changed are built (?)</span>
+./simulate-travis.py --disable-docker --packages mynewtool --force
+</pre></div>
+<p>If tests passed, you can now squash your commits, push the branch</p>
+<div class="highlight"><pre><span></span>git push origin
 </pre></div>
 
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Go to <a href="https://github.com/bioconda/bioconda-recipes">https://github.com/bioconda/bioconda-recipes</a> and make a Pull Request for your branch</li>
+<li>TravisCI will automatically build your branch.</li>
+<li>If TravisCI tests pass, the Bioconda team will review your PR and if it's okay, merge it</li>
+<li>Recipes in the Bioconda master branch are automatically built on Linux and macOS (via TravisCI) and uploaded to the Anaconda <code>bioconda</code> channel.</li>
+</ul>
 
+</div>
+</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
