@@ -6,12 +6,12 @@
 
 This tutorial covers the basics of setting up the `conda` tool to install bioinformatics tools from [Bioconda](https://bioconda.github.io/) and producing "reproducible environments" as a foundation for your own analysis or pipeline. You don't need `sudo`.
 
-* Tutorial as a [Jupyter Notebook](https://github.com/MonashBioinformaticsPlatform/bioconda-tutorial/blob/master/Bioconda_Installation.ipynb).
+* View the [tutorial notebook](https://github.com/MonashBioinformaticsPlatform/bioconda-tutorial/blob/master/Bioconda_Installation.ipynb).
 * Or as [slides](https://monashbioinformaticsplatform.github.io/bioconda-tutorial/#/)
 
 # Requirements:
 
-Just reading the [notebook](https://github.com/MonashBioinformaticsPlatform/bioconda-tutorial/blob/master/Bioconda_Installation.ipynb) right here on Github and cut'n'pasting into your terminal is probably all you need.
+Just reading the [Jupyter notebook](https://github.com/MonashBioinformaticsPlatform/bioconda-tutorial/blob/master/Bioconda_Installation.ipynb) right here on Github and cut'n'pasting into your terminal is probably all you need.
 
 However, if you'd like to run this notebook on your computer, you will need:
 
